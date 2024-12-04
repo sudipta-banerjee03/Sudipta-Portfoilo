@@ -119,6 +119,39 @@ nav ul li a:hover {
     font-size: 1rem;
     color: #555;
 }
+.hire-me-btn {
+    display: inline-block;
+    background-color: #007BFF; /* Blue background */
+    color: #ffffff; /* White text */
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    margin-top: 15px; /* Adds some spacing from the content above */
+    text-decoration: none; /* Ensures the button looks like a button, not a link */
+}
+
+/* Hover effect */
+.hire-me-btn:hover {
+    background-color: #0056b3; /* Darker blue */
+    transform: scale(1.05); /* Slightly enlarge the button */
+}
+
+/* Focus effect */
+.hire-me-btn:focus {
+    outline: none; /* Removes default focus outline */
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.8); /* Adds a glow effect */
+}
+
+/* Active effect */
+.hire-me-btn:active {
+    transform: scale(0.95); /* Slightly shrink on click */
+    background-color: #004085; /* Even darker blue */
+}
+
 
 /* Skills Section */
 #skills {
