@@ -360,6 +360,86 @@ nav ul li a:hover {
     background: linear-gradient(135deg, #ff9a8b, #ff6a00); /* Orange to Pink gradient */
 }
 
+/* Certificates Section */
+#certificates {
+    padding: 80px 20px;
+    background-color: #f0f4f8;
+    text-align: center;
+}
+
+#certificates h2 {
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 40px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.certificates-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 30px;
+    justify-items: center;
+}
+
+.certificate {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+    width: 100%;
+    max-width: 350px;
+    text-align: left;
+    font-family: 'Arial', sans-serif;
+    border: 1px solid #e0e0e0;
+}
+
+.certificate:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.15);
+}
+
+.certificate h3 {
+    font-size: 24px;
+    color: #2c3e50;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+.certificate p {
+    font-size: 16px;
+    color: #7f8c8d;
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
+
+.certificate a {
+    display: inline-block;
+    padding: 12px 25px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #3498db;
+    text-decoration: none;
+    border-radius: 25px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.certificate a:hover {
+    background-color: #2980b9;
+}
+
+/* Add responsiveness for smaller screens */
+@media screen and (max-width: 768px) {
+    #certificates h2 {
+        font-size: 28px;
+    }
+
+    .certificate {
+        padding: 20px;
+        max-width: 90%;
+    }
+}
+
 
 /* Contact Section */
 #contact {
