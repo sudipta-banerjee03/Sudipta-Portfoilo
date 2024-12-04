@@ -422,3 +422,125 @@ footer {
 footer p {
     font-size: 1rem;
 }
+/* Responsive Design for Mobile Screens */
+@media (max-width: 768px) {
+    /* Navbar */
+    nav ul {
+        flex-direction: column; /* Stack items vertically */
+        align-items: flex-start;
+        padding: 1rem;
+    }
+
+    nav ul li {
+        margin: 0.5rem 0; /* Adjust spacing */
+    }
+
+    nav ul li a {
+        font-size: 1rem; /* Smaller font size */
+    }
+
+    /* Home Section */
+    #home {
+        flex-direction: column; /* Stack content vertically */
+        text-align: center;
+        padding: 2rem 1rem;
+    }
+
+    #home .intro-container {
+        flex-direction: column; /* Stack text and image */
+    }
+
+    #home .text {
+        max-width: 100%; /* Use full width for text */
+        margin-bottom: 2rem;
+    }
+
+    #home .image img {
+        width: 100%;
+        height: auto; /* Maintain aspect ratio */
+    }
+
+    /* Skills Section */
+    #skills ul {
+        grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); /* Adjust column size */
+    }
+
+    .skill-item {
+        width: 120px; /* Smaller skill boxes */
+        height: 120px;
+    }
+
+    /* Projects Section */
+    .projects-container {
+        grid-template-columns: 1fr; /* Single column for projects */
+    }
+
+    .project {
+        text-align: center; /* Center-align content */
+        padding: 1.5rem; /* Adjust padding */
+    }
+
+    /* Contact Section */
+    .contact-details {
+        grid-template-columns: 1fr; /* Single column for contact items */
+        gap: 1rem;
+    }
+
+    form input,
+    form textarea {
+        font-size: 1rem; /* Smaller font size */
+        padding: 0.8rem; /* Adjust padding */
+    }
+
+    form button {
+        font-size: 1rem; /* Adjust button size */
+        padding: 0.8rem 1.5rem;
+    }
+
+    /* Social Links */
+    .social-links {
+        flex-direction: column; /* Stack social links */
+        gap: 1rem;
+    }
+
+    .social-icon img {
+        width: 35px; /* Smaller icons */
+        height: 35px;
+    }
+
+    /* Footer */
+    footer {
+        padding: 1rem;
+        font-size: 0.9rem; /* Adjust footer text size */
+    }
+}
+
+@media (max-width: 480px) {
+    /* Further adjustments for very small screens */
+    #home h1 {
+        font-size: 2rem; /* Smaller heading */
+    }
+
+    #home p {
+        font-size: 1rem;
+    }
+
+    .hire-me-btn {
+        font-size: 14px; /* Smaller font for button */
+        padding: 8px 16px;
+    }
+
+    /* Skills Section */
+    .skill-item {
+        font-size: 1rem; /* Adjust font size in skill boxes */
+    }
+
+    /* Projects Section */
+    .project h3 {
+        font-size: 1.5rem; /* Adjust heading size */
+    }
+
+    .project p {
+        font-size: 1rem; /* Adjust paragraph size */
+    }
+}
