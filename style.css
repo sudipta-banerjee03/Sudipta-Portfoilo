@@ -261,12 +261,7 @@ nav ul li a:hover {
     transition: opacity 0.3s ease;
 }
 
-/* Responsive Design for Small Screens */
-@media (max-width: 768px) {
-    #skills ul {
-        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-    }
-}
+
 
 
 /* Projects Section */
