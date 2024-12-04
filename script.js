@@ -7,6 +7,32 @@ document.addEventListener("DOMContentLoaded", () => {
         hamburger.classList.toggle("active");
     });
 });
+// Get all navigation links
+const navLinks = document.querySelectorAll('nav ul li a');
+
+// Listen for scroll events
+window.addEventListener('scroll', () => {
+    let currentSection = '';
+    
+    // Check which section is currently in view
+    document.querySelectorAll('section').forEach((section) => {
+        const sectionTop = section.offsetTop;
+        const sectionHeight = section.clientHeight;
+        
+        if (window.scrollY >= sectionTop - sectionHeight / 3) {
+            currentSection = section.getAttribute('id');
+        }
+    });
+
+    // Highlight the active link
+    navLinks.forEach((link) => {
+        if (link.getAttribute('href').substring(1) === currentSection) {
+            link.classList.add('active');
+        } else {
+            link.classList.remove('active');
+        }
+    });
+});
 
 const text = "Hi, I'm Sudipta Banerjee";
 const typingEffect = document.getElementById("typing-effect");
